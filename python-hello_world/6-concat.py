@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 str1 = "Holberton"
 str2 = "School"
-print(f"Welcome to {str1} {str2}!")
+concatenated_str = str1 + " " + str2
+print(f"Welcome to {concatenated_str}!")

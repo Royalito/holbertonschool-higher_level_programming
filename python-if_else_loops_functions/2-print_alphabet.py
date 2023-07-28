@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-# Imprime el ASCII alphabet en lowercase, en una sola línea
+# Print the ASCII alphabet in lowercase, not followed by a new line
 for i in range(97, 123):
-    print(chr(i), end="")
+    print("{:c}".format(i), end="")

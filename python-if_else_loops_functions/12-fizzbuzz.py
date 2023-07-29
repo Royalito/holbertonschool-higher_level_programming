@@ -1,15 +1,13 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    output = ""
     for num in range(1, 101):
         if num % 3 == 0 and num % 5 == 0:
-            output += "FizzBuzz "
+            print("FizzBuzz", end=' ')
         elif num % 3 == 0:
-            output += "Fizz "
+            print("Fizz", end=' ')
         elif num % 5 == 0:
-            output += "Buzz "
+            print("Buzz", end=' ')
         else:
-            output += str(num) + " "
-    print(output.strip())  # Elimina el espacio en blanco al final
+            print(num, end=' ')
 
 fizzbuzz()

@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-if __name__ == '__main__':
-    import sys
-    summation = 0
-    argument_list = sys.argv[1:]
-    for argument in argument_list:
-        summation += int(argument)
-    print("{}".format(summation))
+from sys import argv
+if __name__ == "__main__":
+    add = 0
+    for i in range(0, len(argv)):
+        if i > 0:
+            add += int(argv[i])
+    print("{:d}".format(add))
